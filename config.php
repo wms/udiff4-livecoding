@@ -29,8 +29,8 @@ define('DB_DATABASE', 'udiff4-livecodin');
 define('DB_PREFIX', '');
 
 // Path to Lithium library
-define('LITHIUM_LIBRARY_PATH', dirname(__DIR__) .  '/libraries/lithium/');
-define('LITHIUM_APP_PATH', dirname(__DIR__));
+define('LITHIUM_LIBRARY_PATH', __DIR__ .  '/libraries/lithium/');
+define('LITHIUM_APP_PATH', __DIR__);
 
 // Load Lithium library and application
 if(!include LITHIUM_LIBRARY_PATH . 'core/Libraries.php') {
@@ -43,7 +43,7 @@ use lithium\core\Libraries;
 Libraries::add('lithium');
 
 // Application Lithium code
-Libraries::add('udiff4-livecoding', array(
+Libraries::add('demo', array(
     'default' => true
 ));
 
